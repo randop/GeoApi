@@ -10,8 +10,8 @@
   <a href="https://github.com/apple/swift-package-manager">
     <img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg?style=flat" alt=“Swift Package Manager Compatible">
   </a>
-  <a href=“https://github.com/randop/GeoApi/blob/master/LICENSE”>
-    <img src=“https://img.shields.io/github/license/mashape/apistatus.svg” alt=“MIT License” >
+  <a href="https://github.com/randop/GeoApi/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="MIT License" >
   </a>
 </p>
 
