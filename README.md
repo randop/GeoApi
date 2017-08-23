@@ -15,4 +15,41 @@
   </a>
 </p>
 
-## More documentation coming soon.
+### Installation with Swift Package Manager
+
+``` swift
+import PackageDescription
+
+let package = Package(
+  name: "GeoApi",
+  dependencies: [
+    .Package(url: "https://github.com/randop/GeoApi.git", majorVersion: 1, minor: 0)
+  ]
+)
+```
+
+## Usage
+
+### Address Latitude and Longitude 
+
+``` swift
+import GeoApi
+
+let location = "Cardinal Rosales Ave, Cebu City, Cebu 6000, Philippines"
+
+let client = GeoApi(apikey: "")
+let (latitude, longitude) = client.geocode(address: location)
+```
+
+### Distance Between Addresses
+
+``` swift
+import GeoApi
+
+let client = GeoApi(apikey: "")
+
+let location1 = "Cardinal Rosales Ave, Cebu City, Cebu 6000, Philippines"
+let location2 = "Jose Maria del Mar St, Apas, Cebu City, Cebu 6000, Philippines"
+
+let distance = client.miles(from: location1, to: location2)
+```
