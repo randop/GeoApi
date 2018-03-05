@@ -1,6 +1,9 @@
 # Swift GeoApi
 
 <p align="center">
+    <a href="https://circleci.com/gh/randolphledesma/GeoApi">
+        <img src="https://circleci.com/gh/randolphledesma/GeoApi.svg?style=svg" alt="Build Status" />
+    </a>
     <a href="https://github.com/randop/GeoApi">
         <img src="https://img.shields.io/badge/swift-3-blue.svg" alt="Swift3" />
     <a>
