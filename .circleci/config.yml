@@ -5,4 +5,6 @@ jobs:
       - image: swift:4
     steps:
       - checkout
+      - run: swift build
+      - run: swift build -c release
       - run: swift test
