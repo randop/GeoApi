@@ -2,7 +2,10 @@
 
 <p align="center">
     <a href="https://circleci.com/gh/randolphledesma/GeoApi">
-        <img src="https://circleci.com/gh/randolphledesma/GeoApi.svg?style=svg" alt="Build Status" />
+        <img src="https://circleci.com/gh/randolphledesma/GeoApi.svg?style=svg" alt="Circle-CI Build Status" />
+    </a>
+    <a href="https://travis-ci.org/randop/GeoApi">
+        <img src="https://travis-ci.org/randop/GeoApi.svg?branch=master&style=flat" alt="Travis-CI Build Status">
     </a>
     <a href="https://github.com/randop/GeoApi">
         <img src="https://img.shields.io/badge/swift-3-blue.svg" alt="Swift3" />
