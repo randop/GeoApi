@@ -15,11 +15,8 @@ class GeoApiTests: XCTestCase {
 
   func testMiles() {
     let distance = client.miles(from: location1, to: location2)
-    #if swift(>=4.0)
-    XCTAssertEqual(distance, 0.683275566924516, accuracy: 0.000000000000001)
-    #else
-    XCTAssertEqualWithAccuracy(distance, 0.683275566924516, accuracy: 0.000000000000001)
-    #endif
+    //XCTAssertEqual(distance, 0.683275566924516, accuracy: 0.000000000000001)
+    XCTAssertEqual(distance, 0.946508027557316, accuracy: 0.000000000000001)
   }
 
   static var allTests : [(String, (GeoApiTests) -> () throws -> Void)] {
