@@ -2,14 +2,11 @@
 
 <p align="center">
     <a href="https://circleci.com/gh/randolphledesma/GeoApi">
-        <img src="https://circleci.com/gh/randolphledesma/GeoApi.svg?style=svg" alt="Circle-CI Build Status" />
+        <img src="https://circleci.com/gh/randop/GeoApi.svg?style=svg" alt="Circle-CI Build Status" />
     </a>
     <a href="https://travis-ci.org/randop/GeoApi">
         <img src="https://travis-ci.org/randop/GeoApi.svg?branch=master&style=flat" alt="Travis-CI Build Status">
     </a>
-    <a href="https://github.com/randop/GeoApi">
-        <img src="https://img.shields.io/badge/swift-3-blue.svg" alt="Swift3" />
-    <a>
     <a href="https://github.com/randop/GeoApi">
         <img src="https://img.shields.io/badge/swift-4-blue.svg" alt="Swift4" />
     <a>
@@ -32,26 +29,13 @@ import PackageDescription
 let package = Package(
     name: "MyProject",
     dependencies: [
-        .package(url: "https://github.com/randop/GeoApi.git", from: "1.1.0")
+        .package(url: "https://github.com/randop/GeoApi.git", from: "1.2.0")
     ],
     targets: [
         .target(
             name: "MyProject",
             dependencies: ["GeoApi"]),
     ]
-)
-```
-
-### Installation with SPM on Swift 3
-
-``` swift
-import PackageDescription
-
-let package = Package(
-  name: "GeoApi",
-  dependencies: [
-    .Package(url: "https://github.com/randop/GeoApi.git", majorVersion: 1, minor: 0)
-  ]
 )
 ```
 

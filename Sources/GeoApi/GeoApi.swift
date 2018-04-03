@@ -3,16 +3,16 @@ import Dispatch
 
 class GeoApi {
   var apikey = ""
-  
-  
+
+
   /// Initialize class
   ///
   /// - Parameter apikey: Google GeoCoding API Key
   init(apikey: String) {
     self.apikey = apikey
   }
-  
-  
+
+
   /// Get Latitude and Longitude of given address
   ///
   /// - Parameter address: Address
@@ -20,7 +20,7 @@ class GeoApi {
   func geocode(address: String) -> (Double, Double) {
     var latitude: Double = 0.0
     var longitude: Double = 0.0
-    
+
     let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
     let urlComponents = NSURLComponents(string: "https://maps.googleapis.com/maps/api/geocode/json")!
     urlComponents.queryItems = [
@@ -47,16 +47,16 @@ class GeoApi {
           //void
         }
       }
-      
+
       semaphore.signal()
     })
     task.resume()
     semaphore.wait()
-    
+
     return (latitude, longitude)
   }
-  
-  
+
+
   /// Calculate the distance
   ///
   /// - Parameters:
@@ -74,16 +74,16 @@ class GeoApi {
     miles = distance * 60 * 1.1515
     return miles
   }
-  
+
   func deg2rad(_ deg: Double) -> Double {
     return deg * Double.pi / 180.0
   }
-  
+
   func rad2deg(_ rad: Double) -> Double {
     return rad * 180.0 / Double.pi
   }
-  
-  
+
+
   /// Get distance of two given addresses
   ///
   /// - Parameters:
